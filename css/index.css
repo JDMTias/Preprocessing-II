@@ -179,6 +179,18 @@ header .nav {
   align-items: center;
   padding: 0 10.5%;
 }
+@media (max-width:500px) {
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  header .nav h1 {
+    padding: 10px;
+  }
+}
 header .nav a {
   font-size: 1.8rem;
   padding: 10px;
@@ -242,9 +254,34 @@ header .nav a {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 10%;
+  }
+  .container-home .content-pick {
+    margin: 0 5%;
+  }
+  .container-home .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .welcome {
   border-bottom: 1px dashed #C0C0C0;
 }
 .welcome .welcome-cont {
   padding: 2% 0;
+}
+.btn button {
+  background-color: #17A2B8;
+  color: #FFFFFF;
+  border-radius: 10px;
+  width: 75%;
+  height: 35px;
 }
