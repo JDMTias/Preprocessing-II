@@ -1,1 +1,28 @@
 // Navigation Styles here
+
+header {
+    .border-bottom();
+    padding: 2% 0;
+
+    .nav {
+        .flexin(row, space-between);
+        padding: 0 10.5%;
+
+        @media @mobile {
+            .flexin(column, center);
+            padding: 0;
+            h1 {
+                padding: 10px;
+            }
+        }
+      
+    
+        a {
+            font-size: 1.8rem;
+            padding: 10px;
+            text-decoration: none;
+            color: @font-color;
+        }
+    }
+
+}
